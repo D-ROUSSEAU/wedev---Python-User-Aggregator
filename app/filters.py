@@ -16,7 +16,8 @@ def filter_users_by_company_name(
         # Récupère le champs "name" du champs "compagny"
         company_name = company.get("name", "")
 
-        # Rajoute l'utilisateur au tableau filtered_users si "e" est dans le champs "name" de "compagny"
+        # Rajoute l'utilisateur au tableau filtered_users 
+        # si "e" est dans le champs "name" de "compagny"
         if "e" in company_name.lower():
             filtered_users.append(user)
 
